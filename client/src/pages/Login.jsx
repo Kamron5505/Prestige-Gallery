@@ -53,8 +53,12 @@ const Login = () => {
           animate={{ opacity: 1, y: 0 }}
           className="w-full max-w-md"
         >
-          <Link to="/" className="font-serif text-2xl tracking-[0.15em] text-ivory-100 mb-10 block">
-            <span className="font-script text-3xl text-gold">P</span>restige
+          <Link to="/" className="mb-10 block">
+            <img
+              src="/images/logo.jpg"
+              alt="Prestige Gallery"
+              className="h-8 w-auto object-contain dark:brightness-0 dark:invert"
+            />
           </Link>
 
           <h1 className="font-serif text-3xl text-ivory-100 mb-2">{t('auth.signIn')}</h1>

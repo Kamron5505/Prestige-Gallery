@@ -51,9 +51,11 @@ const MobileDrawer = ({ isOpen, onClose }) => {
             <div className="flex flex-col h-full">
               {/* Header */}
               <div className="flex items-center justify-between p-6 border-b border-ivory-100/5">
-                <span className="font-serif text-xl tracking-[0.15em]">
-                  <span className="font-script text-2xl text-gold">P</span>restige
-                </span>
+                <img
+                  src="/images/logo.jpg"
+                  alt="Prestige Gallery"
+                  className="h-7 w-auto object-contain dark:brightness-0 dark:invert"
+                />
                 <button
                   onClick={onClose}
                   className="text-ivory-300/70 hover:text-gold transition-colors"

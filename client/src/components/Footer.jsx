@@ -11,8 +11,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 lg:gap-8">
           {/* Brand */}
           <div>
-            <Link to="/" className="font-serif text-2xl tracking-[0.15em] text-ivory-100">
-              <span className="font-script text-3xl text-gold">P</span>restige
+            <Link to="/" className="inline-block">
+              <img
+                src="/images/logo.jpg"
+                alt="Prestige Gallery"
+                className="h-8 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity dark:brightness-0 dark:invert"
+              />
             </Link>
             <p className="mt-4 text-ivory-300/50 text-sm leading-relaxed max-w-xs">
               {t('footer.description')}

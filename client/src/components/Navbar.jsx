@@ -77,9 +77,13 @@ const Navbar = ({ onMenuClick }) => {
           {/* Logo */}
           <Link
             to="/"
-            className="font-serif text-2xl md:text-3xl tracking-[0.15em] text-ivory-100 hover:text-gold transition-colors duration-300"
+            className="flex items-center gap-2 group"
           >
-            <span className="font-script text-3xl md:text-4xl text-gold">P</span>restige
+            <img
+              src="/images/logo.jpg"
+              alt="Prestige Gallery"
+              className="h-8 md:h-9 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity dark:brightness-0 dark:invert"
+            />
           </Link>
 
           {/* Right icons */}
