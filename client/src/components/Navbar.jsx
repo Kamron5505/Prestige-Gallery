@@ -48,16 +48,29 @@ const Navbar = ({ onMenuClick }) => {
     >
       <nav className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
-          {/* Mobile menu */}
-          <button
-            onClick={onMenuClick}
-            className="lg:hidden text-ivory-100 hover:text-gold transition-colors"
-            aria-label="Open menu"
-          >
-            <HiOutlineBars3 className="w-6 h-6" />
-          </button>
+          {/* Left: Mobile menu + Logo */}
+          <div className="flex items-center gap-4">
+            <button
+              onClick={onMenuClick}
+              className="lg:hidden text-ivory-100 hover:text-gold transition-colors"
+              aria-label="Open menu"
+            >
+              <HiOutlineBars3 className="w-6 h-6" />
+            </button>
 
-          {/* Desktop nav links */}
+            <Link
+              to="/"
+              className="flex items-center gap-2 group"
+            >
+              <img
+                src="/images/logo.jpg"
+                alt="Prestige Gallery"
+                className="w-8 h-8 md:w-9 md:h-9 rounded-full object-cover opacity-90 group-hover:opacity-100 transition-all dark:ring-1 dark:ring-white/20 dark:ring-offset-2 dark:ring-offset-charcoal-900"
+              />
+            </Link>
+          </div>
+
+          {/* Center: Desktop nav links */}
           <div className="hidden lg:flex items-center gap-8">
             {NAV_LINKS.map((link) => (
               <Link
@@ -73,18 +86,6 @@ const Navbar = ({ onMenuClick }) => {
               </Link>
             ))}
           </div>
-
-          {/* Logo */}
-          <Link
-            to="/"
-            className="flex items-center gap-2 group"
-          >
-            <img
-              src="/images/logo.jpg"
-              alt="Prestige Gallery"
-              className="h-8 md:h-9 w-auto object-contain opacity-90 group-hover:opacity-100 transition-opacity dark:brightness-0 dark:invert"
-            />
-          </Link>
 
           {/* Right icons */}
           <div className="flex items-center gap-3 lg:gap-5">

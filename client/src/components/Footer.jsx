@@ -15,7 +15,7 @@ const Footer = () => {
               <img
                 src="/images/logo.jpg"
                 alt="Prestige Gallery"
-                className="h-8 w-auto object-contain opacity-80 hover:opacity-100 transition-opacity dark:brightness-0 dark:invert"
+                className="w-8 h-8 rounded-full object-cover opacity-80 hover:opacity-100 transition-all dark:brightness-[1.8] dark:drop-shadow-[0_0_6px_rgba(255,255,255,0.15)]"
               />
             </Link>
             <p className="mt-4 text-ivory-300/50 text-sm leading-relaxed max-w-xs">
